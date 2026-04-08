@@ -119,6 +119,38 @@ header {
   color: #555;
 }
 
+/* ─── Ghost card ──────────────────────────────────────────────────────────── */
+
+.card--ghost {
+  border: 1.5px dashed #e0e0e0;
+  background: transparent;
+  cursor: default;
+  pointer-events: none;
+}
+
+.card--ghost:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.card-visual--ghost {
+  background: transparent;
+}
+
+.ghost-dots {
+  font-size: 1.25rem;
+  letter-spacing: 0.2em;
+  color: #ddd;
+}
+
+.card-title--ghost {
+  color: #ccc;
+}
+
+.card-desc--ghost {
+  color: #ddd;
+}
+
 /* ─── Footer ──────────────────────────────────────────────────────────────── */
 
 footer {
