@@ -48,8 +48,6 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
-  /* Left-align cards so a single card doesn't stretch full width */
-  align-items: start;
   justify-content: start;
 }
 
