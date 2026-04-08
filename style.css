@@ -10,7 +10,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: #f1f2f6;
+  background: #ffffff;
   color: #111;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
@@ -58,6 +58,7 @@ header {
 .card {
   background: #fff;
   border-radius: 16px;
+  border: 1px solid #ebebeb;
   overflow: hidden;
   text-decoration: none;
   color: inherit;
@@ -69,7 +70,7 @@ header {
 
 .card:hover {
   transform: scale(1.023);
-  box-shadow: 3px 6px 16px 0 rgba(0, 0, 0, 0.10);
+  box-shadow: 3px 6px 16px 0 rgba(0, 0, 0, 0.08);
 }
 
 /* ─── Card visual (illustration area) ────────────────────────────────────── */
@@ -92,26 +93,11 @@ header {
   flex: 1;
 }
 
-.card-header-row {
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
 .card-title {
   font-size: 1.05rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   color: #111;
-}
-
-.card-tag {
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #aaa;
 }
 
 .card-desc {
@@ -140,18 +126,25 @@ footer {
   padding: 0 24px 56px;
   font-size: 0.82rem;
   color: #bbb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 
-footer a {
-  color: #bbb;
+.feedback-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #ccc;
   text-decoration: none;
-  border-bottom: 1px solid #ddd;
-  transition: color 100ms, border-color 100ms;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: color 100ms;
 }
 
-footer a:hover {
+.feedback-link:hover {
   color: #555;
-  border-color: #aaa;
 }
 
 /* ─── Responsive ──────────────────────────────────────────────────────────── */
