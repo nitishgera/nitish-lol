@@ -1,0 +1,14 @@
+# Nitish Gera
+
+> Building apps in Singapore.
+
+Personal site and app portfolio by Nitish Gera.
+
+## Apps
+
+- [Tiny Trips](https://tinytrips.nitish.lol) — AI travel planner for families with toddlers. Enter a destination and children's ages, get a full trip guide in under a minute.
+
+## Contact
+
+- Email: nitishgera@gmail.com
+- Site: https://nitish.lol
