@@ -1,0 +1,186 @@
+/* ─── Reset ───────────────────────────────────────────────────────────────── */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ─── Base ────────────────────────────────────────────────────────────────── */
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f1f2f6;
+  color: #111;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Header ──────────────────────────────────────────────────────────────── */
+
+header {
+  text-align: center;
+  padding: 72px 24px 48px;
+}
+
+.site-name {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #111;
+  line-height: 1;
+}
+
+.tagline {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #999;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+/* ─── Grid ────────────────────────────────────────────────────────────────── */
+
+.grid {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 8px 32px 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  /* Left-align cards so a single card doesn't stretch full width */
+  align-items: start;
+  justify-content: start;
+}
+
+/* ─── Card ────────────────────────────────────────────────────────────────── */
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  transition: transform 75ms ease-in-out, box-shadow 75ms ease-in-out;
+  max-width: 300px;
+}
+
+.card:hover {
+  transform: scale(1.023);
+  box-shadow: 3px 6px 16px 0 rgba(0, 0, 0, 0.10);
+}
+
+/* ─── Card visual (illustration area) ────────────────────────────────────── */
+
+.card-visual {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ─── Card body ───────────────────────────────────────────────────────────── */
+
+.card-body {
+  padding: 18px 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.card-header-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+
+.card-tag {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #aaa;
+}
+
+.card-desc {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #bbb;
+  transition: color 100ms;
+}
+
+.card:hover .card-link {
+  color: #555;
+}
+
+/* ─── Footer ──────────────────────────────────────────────────────────────── */
+
+footer {
+  text-align: center;
+  padding: 0 24px 56px;
+  font-size: 0.82rem;
+  color: #bbb;
+}
+
+footer a {
+  color: #bbb;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+  transition: color 100ms, border-color 100ms;
+}
+
+footer a:hover {
+  color: #555;
+  border-color: #aaa;
+}
+
+/* ─── Responsive ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    max-width: none;
+  }
+}
+
+@media (max-width: 540px) {
+  header {
+    padding: 48px 20px 36px;
+  }
+
+  .site-name {
+    font-size: 1.75rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 8px 20px 60px;
+  }
+
+  .card {
+    max-width: none;
+  }
+}
