@@ -55,115 +55,100 @@
       "@type": "WebSite",
       "name": "nitish.lol",
       "url": "https://nitish.lol",
-      "author": {
-        "@type": "Person",
-        "name": "Nitish Gera"
-      }
+      "author": { "@type": "Person", "name": "Nitish Gera" }
     }
   ]
   </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <h1 class="site-name">nitish.lol</h1>
-    <p class="tagline">trying to build nice things. lol.</p>
+  <header class="site-head">
+    <div>
+      <h1 class="site-name">nitish<span class="accent">.lol</span></h1>
+      <p class="tagline">a small shelf of things i've made</p>
+    </div>
+    <div class="counter">
+      <div><b>02</b> shipped</div>
+      <div><b>01</b> cooking</div>
+    </div>
   </header>
 
-  <main class="grid">
+  <main class="board">
 
-    <a href="https://tinytrips.nitish.lol" class="card">
-      <div class="card-visual" style="background: #fdf3e7;">
-        <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <!-- Suitcase body -->
-          <rect x="12" y="26" width="48" height="36" rx="6" fill="#e8c99a" />
-          <rect x="12" y="26" width="48" height="36" rx="6" stroke="#c9a06a" stroke-width="2"/>
-          <!-- Suitcase handle -->
-          <path d="M26 26V20a10 10 0 0 1 20 0v6" stroke="#c9a06a" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-          <!-- Latch -->
-          <rect x="31" y="40" width="10" height="7" rx="2" fill="#c9a06a"/>
-          <!-- Wheels -->
-          <circle cx="22" cy="63" r="3" fill="#c9a06a"/>
-          <circle cx="50" cy="63" r="3" fill="#c9a06a"/>
-          <!-- Stripe -->
-          <line x1="12" y1="44" x2="60" y2="44" stroke="#c9a06a" stroke-width="1.5"/>
-          <!-- Baby face -->
-          <circle cx="54" cy="20" r="10" fill="#fce8c8" stroke="#c9a06a" stroke-width="1.5"/>
-          <circle cx="51" cy="18" r="1.2" fill="#7a5230"/>
-          <circle cx="57" cy="18" r="1.2" fill="#7a5230"/>
-          <path d="M52 22 Q54 24 56 22" stroke="#7a5230" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+    <a class="card card--tt" href="https://tinytrips.nitish.lol">
+      <div class="card-idx"><span>→ 01</span><span>2026</span></div>
+      <div class="card-visual" style="background:#f4ead8;">
+        <svg width="88" height="88" viewBox="0 0 88 88" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M34 26 V20 a10 10 0 0 1 20 0 V26" stroke="#b8863d" stroke-width="1.8" fill="none"/>
+          <rect x="18" y="26" width="52" height="40" rx="5" fill="#e7c48a" stroke="#b8863d" stroke-width="1.8"/>
+          <line x1="18" y1="44" x2="70" y2="44" stroke="#b8863d" stroke-width="1.5"/>
+          <rect x="40" y="40" width="8" height="6" rx="1.5" fill="#b8863d"/>
+          <line x1="26" y1="66" x2="26" y2="70" stroke="#b8863d" stroke-width="2"/>
+          <line x1="62" y1="66" x2="62" y2="70" stroke="#b8863d" stroke-width="2"/>
+          <line x1="56" y1="26" x2="62" y2="18" stroke="#b8863d" stroke-width="1.5"/>
+          <g transform="rotate(8 65 15)">
+            <rect x="58" y="10" width="14" height="10" rx="1.5" fill="#fdf6e8" stroke="#b8863d" stroke-width="1.5"/>
+            <line x1="61" y1="15" x2="68" y2="15" stroke="#b8863d" stroke-width="1.2"/>
+          </g>
         </svg>
       </div>
-      <div class="card-body">
-        <h2 class="card-title">tiny trips</h2>
-        <p class="card-desc">A travel planning app for parents of toddlers.</p>
-        <span class="card-link">Explore →</span>
-      </div>
+      <h2 class="card-title">tiny trips</h2>
+      <p class="card-desc">AI travel planning for families with toddlers. Enter a destination + kid ages, get a plan in under a minute.</p>
+      <div class="card-foot"><span>travel</span><span class="go">open →</span></div>
     </a>
 
-    <a href="https://runninglow.nitish.lol" class="card">
-      <div class="card-visual" style="background: #f0ede7;">
-        <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs>
-            <clipPath id="clip-jar1"><rect x="11" y="22" width="14" height="28" rx="3.5"/></clipPath>
-            <clipPath id="clip-jar2"><rect x="29" y="25" width="14" height="25" rx="3.5"/></clipPath>
-            <clipPath id="clip-jar3"><rect x="47" y="28" width="14" height="22" rx="3.5"/></clipPath>
-          </defs>
-          <!-- Shelf -->
-          <rect x="6" y="51" width="60" height="5" rx="2" fill="#c8c2b6"/>
-          <rect x="4" y="55" width="64" height="2" rx="1" fill="#b8b2a6"/>
-          <!-- Jar 1: full (green) -->
-          <rect x="11" y="22" width="14" height="28" rx="3.5" fill="#eef7f2"/>
-          <rect x="11" y="33" width="14" height="17" clip-path="url(#clip-jar1)" fill="#b8dfc8"/>
-          <rect x="11" y="22" width="14" height="28" rx="3.5" stroke="#8abf9e" stroke-width="1.5"/>
-          <rect x="10" y="18" width="16" height="7" rx="2.5" fill="#8abf9e"/>
-          <rect x="13" y="16" width="10" height="4" rx="1.5" fill="#7aaf8e"/>
-          <!-- Jar 2: half (amber) -->
-          <rect x="29" y="25" width="14" height="25" rx="3.5" fill="#fdf4e7"/>
-          <rect x="29" y="38" width="14" height="12" clip-path="url(#clip-jar2)" fill="#f0cc88"/>
-          <rect x="29" y="25" width="14" height="25" rx="3.5" stroke="#d4a55a" stroke-width="1.5"/>
-          <rect x="28" y="21" width="16" height="7" rx="2.5" fill="#d4a55a"/>
-          <rect x="31" y="19" width="10" height="4" rx="1.5" fill="#c49548"/>
-          <!-- Jar 3: running low (red) -->
-          <rect x="47" y="28" width="14" height="22" rx="3.5" fill="#fdf0f0"/>
-          <rect x="47" y="44" width="14" height="6" clip-path="url(#clip-jar3)" fill="#e8a8a8"/>
-          <rect x="47" y="28" width="14" height="22" rx="3.5" stroke="#d47a7a" stroke-width="1.5"/>
-          <rect x="46" y="24" width="16" height="7" rx="2.5" fill="#d47a7a"/>
-          <rect x="49" y="22" width="10" height="4" rx="1.5" fill="#c46a6a"/>
+    <a class="card card--rl" href="https://runninglow.nitish.lol">
+      <div class="card-idx"><span>→ 02</span><span>2026</span></div>
+      <div class="card-visual" style="background:#e8efe4;">
+        <svg width="96" height="88" viewBox="0 0 96 88" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="10" y1="66" x2="86" y2="66" stroke="#6a8a5a" stroke-width="1.8"/>
+          <!-- jar 1 full -->
+          <rect x="14" y="28" width="18" height="38" rx="2.5" fill="#fdfbf4" stroke="#6a8a5a" stroke-width="1.8"/>
+          <rect x="14" y="34" width="18" height="32" fill="#c8dcb8"/>
+          <rect x="14" y="28" width="18" height="38" rx="2.5" fill="none" stroke="#6a8a5a" stroke-width="1.8"/>
+          <rect x="12" y="24" width="22" height="6" rx="1.5" fill="#6a8a5a"/>
+          <!-- jar 2 half -->
+          <rect x="38" y="32" width="18" height="34" rx="2.5" fill="#fdfbf4" stroke="#6a8a5a" stroke-width="1.8"/>
+          <rect x="38" y="48" width="18" height="18" fill="#c8dcb8"/>
+          <rect x="38" y="32" width="18" height="34" rx="2.5" fill="none" stroke="#6a8a5a" stroke-width="1.8"/>
+          <rect x="36" y="28" width="22" height="6" rx="1.5" fill="#6a8a5a"/>
+          <!-- jar 3 low -->
+          <rect x="62" y="36" width="18" height="30" rx="2.5" fill="#fdfbf4" stroke="#6a8a5a" stroke-width="1.8"/>
+          <rect x="62" y="60" width="18" height="6" fill="#c8dcb8"/>
+          <rect x="62" y="36" width="18" height="30" rx="2.5" fill="none" stroke="#6a8a5a" stroke-width="1.8"/>
+          <rect x="60" y="32" width="22" height="6" rx="1.5" fill="#6a8a5a"/>
+          <circle cx="71" cy="22" r="2" fill="#c46a3e"/>
         </svg>
       </div>
-      <div class="card-body">
-        <h2 class="card-title">running low</h2>
-        <p class="card-desc">A household staples tracker for busy homes.</p>
-        <span class="card-link">Explore →</span>
-      </div>
+      <h2 class="card-title">running low</h2>
+      <p class="card-desc">A staples tracker that quietly nudges you before the rice, oil, or soap runs out. 40+ items.</p>
+      <div class="card-foot"><span>home</span><span class="go">open →</span></div>
     </a>
 
-    <div class="card card--ghost">
-      <div class="card-visual card-visual--ghost">
-        <span class="ghost-dots">· · ·</span>
+    <div class="card card--soon card--ghost">
+      <div class="card-idx"><span>→ 03</span><span>soon</span></div>
+      <div class="card-visual" style="background:rgba(23,22,26,0.04);">
+        <svg width="88" height="88" viewBox="0 0 88 88" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="20" y="18" width="48" height="54" rx="3" fill="#fdfbf4" stroke="rgba(23,22,26,0.3)" stroke-width="1.8" stroke-dasharray="3 3"/>
+          <line x1="32" y1="38" x2="52" y2="38" stroke="rgba(23,22,26,0.25)" stroke-width="1.5"/>
+          <line x1="32" y1="48" x2="46" y2="48" stroke="rgba(23,22,26,0.18)" stroke-width="1.5"/>
+        </svg>
       </div>
-      <div class="card-body">
-        <h2 class="card-title card-title--ghost">more apps incoming</h2>
-        <p class="card-desc card-desc--ghost">working on something new.</p>
-      </div>
+      <h2 class="card-title">something new</h2>
+      <p class="card-desc">I have a sketch in a notebook. It is not quite a thing yet.</p>
+      <div class="card-foot"><span>wip</span><span>→</span></div>
     </div>
 
   </main>
 
-  <footer>
-    <p>Made by Nitish Gera in Singapore</p>
-    <a href="mailto:nitishgera@gmail.com" class="feedback-link" aria-label="Send feedback">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <rect x="2" y="4" width="20" height="16" rx="2"/>
-        <path d="M2 7l10 7 10-7"/>
-      </svg>
-      Send feedback
-    </a>
+  <footer class="site-foot">
+    <span>made in singapore · by nitish gera</span>
+    <a href="mailto:nitishgera@gmail.com">say hi →</a>
   </footer>
 
 </body>
