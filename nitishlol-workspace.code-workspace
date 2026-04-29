@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "../tiny-trips"
+		},
+		{
+			"path": "../hard-copy"
 		}
 	],
 	"settings": {}
