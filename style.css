@@ -90,11 +90,11 @@ main, header, footer { position: relative; z-index: 1; }
 /* ─── Board ──────────────────────────────────────────────────────────────────── */
 
 .board {
-  padding: 68px 64px 160px;
+  padding: 68px 80px 160px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 56px;
-  max-width: 1280px;
+  max-width: 1560px;
   margin: 0 auto;
 }
 
@@ -200,8 +200,9 @@ main, header, footer { position: relative; z-index: 1; }
 
 /* Rotations per card */
 .card--tt   { transform: rotate(-2.2deg); }
-.card--rl   { transform: rotate(1.4deg); margin-top: 36px; }
-.card--soon { transform: rotate(2.6deg); margin-top: 12px; }
+.card--rl   { transform: rotate(1.4deg); margin-top: 44px; }
+.card--hc   { transform: rotate(-1.6deg); margin-top: 18px; }
+.card--soon { transform: rotate(2.6deg); margin-top: 38px; }
 
 /* Ghost card */
 .card--ghost {
@@ -262,8 +263,9 @@ main, header, footer { position: relative; z-index: 1; }
     gap: 44px;
     padding: 48px 24px 120px;
   }
-  .card--tt, .card--rl, .card--soon { transform: rotate(-1.5deg); margin-top: 0; }
+  .card--tt, .card--rl, .card--hc, .card--soon { transform: rotate(-1.5deg); margin-top: 0; }
   .card--rl { transform: rotate(1deg); }
+  .card--hc { transform: rotate(-0.6deg); }
   .card--soon { transform: rotate(-0.8deg); }
   .site-foot {
     padding: 24px;
